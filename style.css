@@ -1,0 +1,131 @@
+@font-face {
+  src: url(/assets/hk-grotesk.woff2);
+  font-family: "HK-Grotesk";
+}
+
+body {
+  font-family: "HK-Grotesk";
+  font-size: 2em;
+  color: #333;
+  line-height: 1.35;
+}
+
+header {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+header.white {
+  color: #fff;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  height: 100vh;
+}
+
+img {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper {
+  position: relative;
+}
+
+/* Progress bar */
+.progress-indicator {
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+}
+
+.progress-wrapper {
+  width: 100%;
+  height: 3px;
+}
+
+.progress-bar {
+  width: 0px;
+  height: 3px;
+  background-color: #333;
+  transition: background-color 0.5s;
+}
+
+.progress-bar.white {
+  background-color: #fff;
+}
+
+/* Shapes */
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transition: 0.3s;
+  top: 40px;
+  left: -60px;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  right: -50px;
+  bottom: 50px;
+}
+
+.red {
+  background-color: #d54156;
+}
+
+.blue {
+  background-color: #5a82a0;
+}
+
+.yellow {
+  background-color: #d6ac35;
+}
+.brown {
+  background-color: #5f3736;
+}
+.grey {
+  background-color: #6e5f67;
+}
+
+.behind {
+  z-index: 1;
+}
+
+.in-front {
+  z-index: 3;
+}
+
+/* Section Styling */
+/* Section 01 */
+.section-1 {
+  background-color: #c8dee0;
+}
+
+/* Section 02 */
+.section-2 {
+  background-color: #c5c5c5;
+}
+
+/* Section 03 */
+.section-3 {
+  background-color: #292121;
+}
+
+/* Section 04 */
+.section-4 {
+  background-color: #f3f1f2;
+}
